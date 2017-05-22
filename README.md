@@ -6,3 +6,6 @@ lxrun /install
 
 Confirm version: `lsb_release -a`
 
+# Resources
+
+[dotfiles](https://dotfiles.github.io/)
