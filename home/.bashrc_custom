@@ -1,4 +1,4 @@
 export TERM=xterm-256color
 export AWS_KEY_DIR="/mnt/c/Keys"
 
-export PATH="$PATH:/mnt/c/Projects/trunk.app.bombbomb.com/tools"
+export PATH="$PATH:/mnt/c/Projects/_app.bombbomb.com/tools"
