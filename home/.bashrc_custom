@@ -1,4 +1,28 @@
-export TERM=xterm-256color
-export AWS_KEY_DIR="/mnt/c/Keys"
+# NVM - Load on first invocation
+nvm() {
+    unset -f nvm
+    source ~/.nvm/nvm.sh
+    nvm "$@"
+}
 
-export PATH="$PATH:/mnt/c/Projects/_app.bombbomb.com/tools"
+node() {
+    unset -f node
+    source ~/.nvm/nvm.sh
+    node "$@"
+}
+
+npm() {
+    unset -f npm
+    source ~/.nvm/nvm.sh
+    npm "$@"
+}
+
+# GO
+GOPATH=$HOME/go
+
+# Docker on Windows
+export DOCKER_HOST=tcp://localhost:2375
+
+export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
