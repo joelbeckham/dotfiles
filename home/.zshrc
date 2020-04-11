@@ -8,7 +8,7 @@ export ZSH="/home/joelbeckham/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="crunch"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -109,7 +109,7 @@ source $ZSH/oh-my-zsh.sh
 # Prompt
 ################
 # Orig - PROMPT='$FG[015][$FG[010]%n@%m$FG[015]][$FG[244]%t$FG[015]][$FG[087]%~$FG[015]]$FG[010]$(git_prompt_info)$FG[015]-> '
-PROMPT='%(?.%F{green}√.%F{red}?%?)%f %B%~%b $FG[010]$(git_prompt_info)$FG[015]'
+PROMPT='[%(?.%F{green}√.%F{red}?%?)%f] $FG[032]%~%f $(git_prompt_info) %(!.%F{red}.%F{green})%f '
  
 ################
 # NPM
